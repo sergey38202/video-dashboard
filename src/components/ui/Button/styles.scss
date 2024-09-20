@@ -1,0 +1,72 @@
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+    outline: none;
+  
+    &:disabled {
+      cursor: not-allowed;
+      opacity: 0.6;
+    }
+  }
+  
+  .primary {
+    background-color: #4a90e2;
+    color: #ffffff;
+  
+    &:hover:not(:disabled) {
+      background-color: #357abd;
+    }
+  }
+  
+  .secondary {
+    background-color: #6c757d;
+    color: #ffffff;
+  
+    &:hover:not(:disabled) {
+      background-color: #5a6268;
+    }
+  }
+  
+  .outline {
+    background-color: transparent;
+    color: #4a90e2; /* Primary blue text */
+    border: 1px solid #4a90e2; /* Primary blue border */
+  
+    &:hover:not(:disabled) {
+      background-color: #4a90e2; /* Fill background on hover */
+      color: #ffffff; /* White text on hover */
+    }
+  }
+  
+  /* Size variants */
+  .small {
+    font-size: 0.875rem; /* Smaller font size */
+    padding: 5px 15px; /* Smaller padding */
+  }
+  
+  .medium {
+    font-size: 1rem; /* Default font size */
+    padding: 10px 20px; /* Default padding */
+  }
+  
+  .large {
+    font-size: 1.125rem; /* Larger font size */
+    padding: 15px 30px; /* Larger padding */
+  }
+  
+  /* Loading state styles */
+  .loading {
+    cursor: wait; /* Show wait cursor */
+    opacity: 0.8; /* Slightly dim the button */
+  }  
+  

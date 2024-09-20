@@ -1,0 +1,38 @@
+.video-player-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .controls-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .save-frame-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .download-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .capture-canvas {
+    display: none;
+  }
+  
+  .analytics-container {
+    margin-top: 30px;
+  }
